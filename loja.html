@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joja</title>
+  <link rel="stylesheet" href="/loja.css">
+  <link rel="stylesheet" href="https://fontawesome.com/license/free">
+</head>
+<body>
+  <div>
+    <img src="/logo.png" alt="logo da loja" class="logo">
+    <p>Redes</p>
+    <a href="https://www.instagram.com/diiassf/">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/5519974257667">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://github.com/Dias019">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <h1>Bem-vindo à Snakers Mashup - Seu Destino Online para Tênis Incríveis!</h1>
+    <p>Explore a emoção do estilo e conforto com nossa seleção cuidadosamente escolhida de tênis. Na Snakers Mashup, oferecemos uma experiência de compra descomplicada e empolgante, onde cada par conta uma história única de moda e funcionalidade.</p>
+    <p>De clássicos elegantes a lançamentos contemporâneos, nossa loja virtual é o seu ponto de encontro para encontrar os tênis perfeitos que se encaixam no seu estilo de vida. Navegue por marcas reconhecidas e descubra uma variedade de designs que vão desde esportivos até casuais, garantindo que você encontre o par ideal para todas as ocasiões.</p>
+    <p>Com processos de compra fáceis e entrega eficiente, a Snakers Mashup coloca a satisfação do cliente no centro de tudo o que fazemos. Estamos comprometidos em proporcionar uma experiência de compra online suave, onde a qualidade, a moda e a conveniência se unem.</p>
+    <button id="botao">
+      <i class="fa-solid fa-cart-shopping"></i> 
+    </button>
+    <dialog>
+      <button id="botaoClose">
+        <i class="fa-solid fa-x fa-2xs"></i>
+      </button>
+      <h1>Carrinho de compras</h1>
+      <ul id="carrinhoItens"></ul>
+      <p id="valorTotal">Valor total: R$0.00</p>
+      <p>Selecione a forma de pagamento:</p>
+      <input list="lista" name="formaPagamentoInput" id="formaPagamentoInput" onchange="calcularPagamento()">
+      <datalist id="lista">
+          <option value="PIX"></option>
+          <option value="Credito à vista"></option>
+          <option value="Débito"></option>
+          <option value="2x"></option>
+          <option value="3x"></option>
+          <option value="4x"></option>
+          <option value="5x"></option>
+      </datalist>
+
+      <div id="resultados" style="justify-content: center;">
+        <p id="p"></p>
+    </div>
+
+    <a href="https://www.linkedin.com/in/gabriel-dias-8a8209255/">
+      <button>Finalizar compra</button>
+    </a>
+    
+    </dialog>
+   
+  </div>
+  
+  
+  <div class="shoe-container">
+    <div class="shoe">
+      <img src="/AirMax90.jpeg" alt="AirMax90">
+      <h1>Air Max 90</h1>
+      <p>Tênis Air max 90, preto, Número 38 ao 44 </p>
+      <p>R$570,00</p>
+      <button onclick="adicionarAoCarrinho('Air Max 90', 570)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="shoe">
+      <img src="/airmax90azul.jpeg" alt="AirMax90 Azul">
+      <h1>Air Max 90 Azul</h1>
+      <p>Tênis Air max 90, Azul, Número 38 ao 44 </p>
+      <p>R$570,00</p>
+      <button onclick="adicionarAoCarrinho('Air Max 90 Azul', 570)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="shoe">
+      <img src="/airMax90branco.jpeg" alt="Air max 90 branco">
+      <h1>Air Max 90 Branco</h1>
+      <p>Tênis Air max 90, Branco, Número 38 ao 44 </p>
+      <p>R$570,00</p>
+      <button onclick="adicionarAoCarrinho('Air Max 90 Branco', 570)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="shoe">
+      <img src="/airmax97preto.jpeg" alt="Air max 97 preto">
+      <h1>Air Max 97 Preto</h1>
+      <p>Tênis Air max 97, preto, Número 38 ao 44 </p>
+      <p>R$650,00</p>
+      <button onclick="adicionarAoCarrinho('Air Max 97', 650)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="shoe">
+      <img src="/pumapreto.jpeg" alt="Puma preto">
+      <h1>Puma preto</h1>
+      <p>Tênis Puma preto, preto, Número 38 ao 44 </p>
+      <p>R$490,00</p>
+      <button onclick="adicionarAoCarrinho('Puma preto', 490)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="shoe">
+      <img src="/VansOldSkool.jpeg" alt="Vans old skool">
+      <h1>Vans old skool</h1>
+      <p>Tênis Vans old skool, preto, Número 38 ao 44 </p>
+      <p>R$450,00</p>
+      <button onclick="adicionarAoCarrinho('Vans old skool', 450)">Adicionar ao carrinho</button>
+  </div>
+  <script src="/loja.js"></script>
+  <script src="https://kit.fontawesome.com/a3616fd7bb.js" crossorigin="anonymous"></script>
+</body>
+</html>
