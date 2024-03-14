@@ -133,7 +133,7 @@ body {
  dialog {
   position: fixed;
   top: 50%;
-  left: 37%;
+  left: 40%;
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 20px;
