@@ -1,4 +1,4 @@
-// Abrir e fechar Botão do modal
+// Abrir e fechar Botão do modal/
 const button = document.querySelector("button")
 const modal = document.querySelector("dialog")
 const buttonClose = document.querySelector("dialog button")
